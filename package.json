@@ -1,19 +1,21 @@
 {
-  "name": "n8n-nodes-<...>",
   "version": "0.1.0",
+  "name": "n8n-nodes-ntfy",
   "description": "",
   "keywords": [
+    "n8n-nodes-ntfy",
+    "ntfy.sh",
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://ntfy.sh",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Crying Potato",
+    "email": "idk@cryingpotato.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/raghavanand98/n8n-ntfy.sh.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +32,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/ntfyApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/ntfy/ntfy.node.js"
     ]
   },
   "devDependencies": {
