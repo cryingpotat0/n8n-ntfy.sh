@@ -18,7 +18,7 @@ export class Ntfy implements INodeType {
 				inputs: ['main'],
 				outputs: ['main'],
 				defaults: {
-						name: 'ntfy',
+						name: 'Ntfy',
 				},
 				group: ['transform'],
 				version: 1,
@@ -48,7 +48,6 @@ export class Ntfy implements INodeType {
 								displayName: 'Priority',
 								name: 'priority',
 								type: 'options',
-								default: '',
 								default: Priority.Default,
 								noDataExpression: true,
 								options: Object.keys(Priority).filter(p => isNaN(parseInt(p, 10))).map(pStr => ({

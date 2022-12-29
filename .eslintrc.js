@@ -48,6 +48,7 @@ module.exports = {
 				'n8n-nodes-base/node-param-fixed-collection-type-unsorted-items': 'off',
 				'n8n-nodes-base/node-execute-block-operation-missing-singular-pairing': 'off',
 				'n8n-nodes-base/node-execute-block-operation-missing-plural-pairing': 'off',
+				'n8n-nodes-base/node-param-default-missing': 'off',
 			},
 		},
 	],

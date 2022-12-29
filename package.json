@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.3",
   "name": "n8n-nodes-ntfy",
   "description": "Integrate ntfy.sh in your n8n workflows.",
   "keywords": [
@@ -19,12 +19,12 @@
   },
   "main": "index.js",
   "scripts": {
-    "build": "tsc && gulp build:icons",
-    "dev": "tsc --watch",
-    "format": "prettier nodes credentials --write",
-    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes credentials package.json",
+    "build": "tsc --forceConsistentCasingInFileNames && gulp build:icons",
+    "dev": "tsc --watch --forceConsistentCasingInFileNames",
+    "format": "prettier nodes --write",
+    "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes package.json",
     "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes package.json --fix",
-    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes package.json"
   },
   "files": [
     "dist"
@@ -32,7 +32,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/ntfy/ntfy.node.js"
+      "dist/nodes/Ntfy/Ntfy.node.js"
     ]
   },
   "devDependencies": {
