@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-base.ntfy",
+	"node": "n8n-nodes-ntfy",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [

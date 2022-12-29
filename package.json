@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "name": "n8n-nodes-ntfy",
-  "description": "",
+  "description": "Integrate ntfy.sh in your n8n workflows.",
   "keywords": [
     "n8n-nodes-ntfy",
     "ntfy.sh",
@@ -10,8 +10,8 @@
   "license": "MIT",
   "homepage": "https://ntfy.sh",
   "author": {
-    "name": "Crying Potato",
-    "email": "idk@cryingpotato.com"
+    "name": "Raghav Anand",
+    "email": "dev@raghav98.com"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,7 @@
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
     "lint": "tslint -p tsconfig.json -c tslint.json && eslint nodes credentials package.json",
-    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes credentials package.json --fix",
+    "lintfix": "tslint --fix -p tsconfig.json -c tslint.json && eslint nodes package.json --fix",
     "prepublishOnly": "npm run build && npm run lint -c .eslintrc.prepublish.js nodes credentials package.json"
   },
   "files": [
@@ -31,9 +31,6 @@
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-      "dist/credentials/ntfyApi.credentials.js"
-    ],
     "nodes": [
       "dist/nodes/ntfy/ntfy.node.js"
     ]
