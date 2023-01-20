@@ -5,7 +5,7 @@ This is an n8n community node. It lets you use [ntfy.sh](https://ntfy.sh) in you
 [Installation](#installation)  
 [Operations](#operations)  
 [Compatibility](#compatibility)  
-[Usage](#usage)  <!-- delete if not using this section -->  
+[Roadmap](#roadmap)  <!-- delete if not using this section -->  
 [Resources](#resources)  
 
 ## Installation
@@ -14,18 +14,21 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 
 ## Operations
 
-_List the operations supported by your node._
+Only a single operation is supported right now to send a notification.
+![alt ntfy sample operation](https://github.com/raghavanand98/n8n-ntfy.sh/blob/master/sample.png?raw=true)
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
+Tested against 0.212.0.
 
-## Usage
+## Roadmap
+The broad roadmap is to support all parameters in the [ntfy API](https://docs.ntfy.sh/publish/#publish-as-json). Roughly the order of this will likely be:
+- Click
+- Actions
+- Custom ntfy.sh server support
+- All other params
+- QoL improvements: allow selecting from a list of emojis
+- Improve the security model for the topic name since it's effectively a secret.
 
-_This is an optional section. Use it to help users with any difficult or confusing aspects of the node._
-
-## Resources
-
-* [ntfy.sh documentation](https://docs.ntfy.sh/publish/#publish-as-json)
 
 
