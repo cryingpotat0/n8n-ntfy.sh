@@ -22,6 +22,8 @@ Only a single operation is supported right now to send a notification.
 Tested against 0.212.0.
 
 ## Roadmap
+
+
 The broad roadmap is to support all parameters in the [ntfy API](https://docs.ntfy.sh/publish/#publish-as-json). Roughly the order of this will likely be:
 - Click
 - Actions
@@ -29,6 +31,6 @@ The broad roadmap is to support all parameters in the [ntfy API](https://docs.nt
 - All other params
 - QoL improvements: allow selecting from a list of emojis
 - Improve the security model for the topic name since it's effectively a secret.
-
-
+- Add documentation for local development
+- Add tests
 

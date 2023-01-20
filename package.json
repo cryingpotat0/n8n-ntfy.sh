@@ -1,5 +1,5 @@
 {
-  "version": "0.1.3",
+  "version": "0.1.4",
   "name": "n8n-nodes-ntfy",
   "description": "Integrate ntfy.sh in your n8n workflows.",
   "keywords": [
