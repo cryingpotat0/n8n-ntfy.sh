@@ -27,7 +27,7 @@ Tested against 0.212.0.
 The broad roadmap is to support all parameters in the [ntfy API](https://docs.ntfy.sh/publish/#publish-as-json). Roughly the order of this will likely be:
 - [X] Click
 - [ ] Actions
-- [ ] Custom ntfy.sh server support
+- [X] Custom ntfy.sh server support
 - [ ] All other params
 - [ ] Better validation of correctness and error messages
 - [ ] QoL improvements: allow selecting from a list of emojis
