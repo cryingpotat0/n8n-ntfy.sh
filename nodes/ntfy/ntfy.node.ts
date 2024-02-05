@@ -78,7 +78,13 @@ export class Ntfy implements INodeType {
                         name: 'alternate_url',
                         type: 'string',
                         default: '',
-                    }
+                    },
+                    {
+                        displayName: 'Authentication Token (Bearer)',
+                        name: 'bearer_token',
+                        type: 'string',
+                        default: '',
+                    },
                 ],
             }
         ],
@@ -101,6 +107,7 @@ export class Ntfy implements INodeType {
             body.tags = this.getNodeParameter('tags', i)?.toString().replace(/\s/, '').split(',');
 
             const ntfyUrl = (this.getNodeParameter('additional_fields', i) as any)?.alternate_url;
+            const ntfyBearerToken = (this.getNodeParameter('additional_fields', i) as any)?.bearer_token;
             console.log(`Using ${ntfyUrl} as ntfy.sh server`);
 
             const options: IHttpRequestOptions = {
@@ -109,6 +116,14 @@ export class Ntfy implements INodeType {
                 url: ntfyUrl || `https://ntfy.sh`,
                 json: true,
             };
+
+            if(ntfyBearerToken) {
+                console.log(`Using bearer token`);
+                options.headers = {
+                    Authorization: `Bearer ${ntfyBearerToken}`,
+                };
+            }
+
             const responseData = await this.helpers.httpRequest(options);
             returnData.push(responseData);
         }
